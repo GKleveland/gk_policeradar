@@ -1,12 +1,3 @@
---[[------------------------------------------------------------------------
-
-	Radar/ALPR 
-	Created by Brock =]
-	Uses Numpad5 to turn on
-    Uses Numpad8 to freeze	
-
-------------------------------------------------------------------------]]--
-
 ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
@@ -82,7 +73,7 @@ Citizen.CreateThread( function()
 					local fvspeed = GetEntitySpeed(e)*3.6
 					local fplate = GetVehicleNumberPlateText(e)
 
-					radar.info = string.format("~y~Nummerplade: ~w~%s  ~y~Model: ~w~%s  ~y~Fart: ~w~%s mph", fplate, fmodel, math.ceil(fvspeed))
+					radar.info = string.format("~y~Nummerplade: ~w~%s  ~y~Model: ~w~%s  ~y~Fart: ~w~%s km/t", fplate, fmodel, math.ceil(fvspeed))
 				end
 					
 				local bcoordB = GetOffsetFromEntityInWorldCoords(veh, 0.0, -105.0, 0.0)
@@ -94,7 +85,7 @@ Citizen.CreateThread( function()
 					local bvspeed = GetEntitySpeed(j)*3.6
 					local bplate = GetVehicleNumberPlateText(j)
 
-					radar.info2 = string.format("~y~Nummerplade: ~w~%s  ~y~Model: ~w~%s  ~y~Fart: ~w~%s mph", bplate, bmodel, math.ceil(bvspeed))
+					radar.info2 = string.format("~y~Nummerplade: ~w~%s  ~y~Model: ~w~%s  ~y~Fart: ~w~%s km/t", bplate, bmodel, math.ceil(bvspeed))
 				end
 			end
 			

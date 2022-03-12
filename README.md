@@ -12,7 +12,7 @@ Nummerpladescanner oversat til Dansk, samt lavet fra mph til km/h.
 - Fastlås måling på numpad8
 
 # Credit
-Credit til BrockALPR for at lave den originale nummerpladescanner!
+Credit til Abreezy70 for at lave den originale nummerpladescanner!
 Link til hans github: https://github.com/Abreezy70/BrockALPR
 
 # Discord
